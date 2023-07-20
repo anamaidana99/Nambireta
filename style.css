@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+#descripcion-del-episodio{
+    background-color: rgb(250, 249, 250) ;
+    font-family: 'Montserrat', sans-serif;
+    color:rgb(40, 13, 114)
+}
+/* @font-face {
+    font-family: 'Monserrat';
+    src: url('fonts/MyCustomFont.woff2') format('woff2'),
+         url('fonts/MyCustomFont.woff') format('woff');
+  }
+   */
+
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  #header {
+    background-color: #8bbef6;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title-logos h1 {
+    font-size: 24px;
+  }
+  
+  /* Navigation Styles */
+  #mainNavWrapper {
+    display: flex;
+  }
+  
+  #mainNavigation {
+    display: flex;
+    list-style: none;
+  }
+  
+  #mainNavigation .collection {
+    margin-right: 20px;
+  }
+  
+  #mainNavigation .collection a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #mainNavigation .collection a:hover {
+    background-color: #6f6fff;
+  }
+  
+  /* Style for "Inicio" menu item */
+  #mainNavigation .inicio a {
+    /* Use the same styles as other menu items */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #mainNavigation .inicio a:hover {
+    /* Use the same hover style as other menu items */
+    background-color: #6f6fff;
+  }
+  
+/* PAGINA PRINCIPAL */
+#page {
+    background-color:rgb(248, 248, 242);
+}
+/* CONTENIDO DE EPISODIO */
+.episode-item {
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 1080px;
+    padding: 30px 34px 20px;
+}
+
+#img-ep img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-top: 30px;
+  }
+
+.excerpt-content {
+    box-sizing: border-box;
+    float: right;
+    width: 700px;
+    padding: 30px 34px 20px;
+}
+#conenido-ep {
+    float: right;
+    text-align: left;
+}
+
+.p-number {
+    color:#623cea;
+}
+
+.p-title {
+    color:#623cea;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
