@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-#descripcion-del-episodio{
+#descripcion-del-episodio .info-sobre {
     background-color: rgb(250, 249, 250) ;
     font-family: 'Montserrat', sans-serif;
-    color:rgb(40, 13, 114)
-}
-/* @font-face {
-    font-family: 'Monserrat';
-    src: url('fonts/MyCustomFont.woff2') format('woff2'),
-         url('fonts/MyCustomFont.woff') format('woff');
-  }
-   */
+    color:black;
+    font-weight: 300;
+}    
+
 
 /* Reset default margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  body{
+    font-family: 'Montserrat', sans-serif;
   }
   
   /* Header Styles */
@@ -27,7 +27,7 @@
   
   .header-inner {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
   }
   
@@ -35,8 +35,14 @@
     font-size: 24px;
   }
   
-  /* Navigation Styles */
-  #mainNavWrapper {
+ /* Navigation Styles */
+#logo-NR img {
+    width: 50;
+    height: 50px;
+    float: left;
+  }
+
+#mainNavWrapper {
     display: flex;
   }
   
@@ -44,14 +50,12 @@
     display: flex;
     list-style: none;
   }
-  
-  #mainNavigation .collection {
-    margin-right: 20px;
-  }
+
   
   #mainNavigation .collection a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
     font-size: 18px;
     padding: 10px;
     transition: all 0.3s ease;
@@ -62,16 +66,17 @@
   }
   
   /* Style for "Inicio" menu item */
-  #mainNavigation .inicio a {
+  #mainNavigation .index-inicio a {
     /* Use the same styles as other menu items */
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
     transition: all 0.3s ease;
+    font-weight: 600;
   }
   
-  #mainNavigation .inicio a:hover {
+  #mainNavigation .index-inicio a:hover {
     /* Use the same hover style as other menu items */
     background-color: #6f6fff;
   }
@@ -105,15 +110,109 @@
 #conenido-ep {
     float: right;
     text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .p-number {
     color:#623cea;
+    font-weight: 650;
 }
 
 .p-title {
     color:#623cea;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+.p-title:hover{
+    text-decoration: underline;
+}
+
+.duracion-ep{
+    color: grey;
+    font-size: smaller;
+}
+
+/* CONTENIDO DE EPISODIOS */
+#episodios-page{
+    text-align: center;
+    margin: auto;
+}
+.title-episodios{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #8bbef6;
+    width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 11px auto;
 }
 
 
+/* CONTENIDO DE SOBRE */
+#sobre-page{
+    text-align: center;
+    margin: auto;
+}
+.title-sobre{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #8bbef6;
+    width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 11px auto;
+}
+.info-sobre{
+    color:black;
+    margin: 11px auto;
+    padding: 0px 25px ;
+}
+
+.info-sobre>p{
+    width: 80%;
+    margin: auto;
+}
+
+
+/* CONTENIDO DE CONTACTANOS */
+#contacto-page{
+    text-align: center;
+    margin: 20px auto;
+}
+.title-contact{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 600;
+    background-color: #8bbef6;
+    width: 400px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+.info-contact{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+.contacto{
+    margin-right: 10px;
+}
+
+/* */
+.img-episodio{
+    width: 200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color:#6f6fff;
+}
+
+#button-load-more{
+    cursor: pointer;
+}

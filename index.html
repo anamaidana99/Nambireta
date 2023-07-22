@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nambi Retã </title>
+    <title>Nambi Retã</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,25 +11,28 @@
     <header id="header">
         <div class="header-inner"> 
             <div class="title-logos">
-                <h1>Nambi Retã
-                
-                </h1>            
+                <div id="logo-NR">
+                    <img src="multimedia/logo transparente.png" alt="logo">
+                </div>            
             </div>
             <div id="headerNav">
                 <div id="mainNavWrapper" class="nav-wrapper show-on-scroll">
                     <nav id="mainNavigation" data-content-field="navigation">
                         <!-- INSERTAR LINKS  -->
-                        <div class="index inicio">
-                            <a href="/"> Inicio </a>
+                        <div class="index-inicio">
+                            <a href=""> Inicio </a>
                         </div>
                         <div class="collection">
-                            <a href="/"> Episodios </a> 
+                            <a href="#episodios-page"> Episodios </a> 
                         </div>
                         <div class="collection">
-                            <a href="/"> Eventos </a>  
+                            <a href="#eventos-page"> Eventos </a>  
                         </div>
                         <div class="collection">
-                            <a href="/"> Contáctanos </a> 
+                            <a href="#sobre-page"> Sobre </a>  
+                        </div>
+                        <div class="collection">
+                            <a href="#contacto-page"> Contáctanos </a> 
                         </div>
                     </nav>
                 </div>
@@ -41,59 +44,53 @@
             <div id="featured-section">
                 <div class="episode-item">
                     <div id="img-ep" class="excerpt-thumb">
-                        <a href="/" class="excerpt-image">
+                        <a href="https://open.spotify.com/episode/0IrRr3BDwjfwH8yAvIgOPF?si=dv5qTR6FS3isCTOZthqLjA" class="excerpt-image">
                             <img src="multimedia/53 podcast.png" alt="portada del episodio">
                         </a>
                     </div>
                     <div id="contenido-ep" class="excerpt-content">
                         <h3 class="p-number">Episodio #53</h3>
-                        <h1 class="p-title">Secretos del Himno Nacional paraguayo-uruguayo|Lito Barrios</h1>
+                        <h1 ><a class="p-title" href="https://open.spotify.com/episode/0IrRr3BDwjfwH8yAvIgOPF?si=dv5qTR6FS3isCTOZthqLjA">Secretos del Himno Nacional paraguayo-uruguayo | Lito Barrios</a></h1>
                         <div class="p-summary">
                             <p id="descripcion-del-episodio">
                                 <!-- PONER DESCRIPCION DEL EPISODIO  -->
                                 Este episodio es sumamente importante para la historia de nuestro país, y es nuestro deber difundirlo. La verdad sale a la luz. En menos de 20min te resumimos lo que fue el live con el Maestro Lito Barrios, actual Director de Investigación Musical del Ateneo Paraguayo, y autor del libro "Secretos del Himno Nacional paraguayo-uruguayo", publicado en 2017. El Maestro nos comparte su proceso de investigación cómo descubrió al verdadero autor del himno nacional, qué obstáculos encontró, además de plantear numerosas hipótesis y exponer nuevas evidencias al respecto, luego de más de 100 años en duda.
-
                             </p>
                         </div>
-                        <div class="sqs-audio-embed" data-url="/////" data-mime-type="audio/mpeg" data-author="" data-title="Secretos del Himno Nacional paraguayo-uruguayo|Lito Barrios" data-show-download="true" data-design-style="minimal" data-color-theme="dark" id="/">
-                            <div class="yui3-widget sqs-widget sqs-widgets-audio-player dark no-artist first-play tiny">
-                                <div id="/" class="sqs-widgets-audio-player-content">
-                                    <div class="player download" id="/">
-                                        <div class="action" tabindex="0">
-                                            <div class="play">
-                                                <div class="play-button"></div>
-                                            </div>
-                                            <div class="pause">
-                                                <div class="pause-button"></div>
-                                            </div>
-                                        </div>
-                                        <div class="track" style="width: 298px;">
-                                        <span class="played"><span class="icon"></span></span>
-                                        </div>
-                                        <div class="labels">
-                                            <div class="title-wrapper">
-                                                <div class="title" title="Episode 53: Lito Barrios" data-title="Episodio 53: Lito Barrios">Secretos del Himno Nacional paraguayo-uruguayo|Lito Barrios</div>
-                                            </div>
-                                            <div class="artistName" title=""></div>
-                                        </div>
-                                        <div class="secondary-controls">
-                                            <div class="time">
-                                                <span class="progress"></span>
-                                                <span class="total"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+          
+                        <div>
+                            <p class="duracion-ep">Duración: 17 minutos</p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="episodios-page">
+                <h1 class="title-episodios"> EPISODIOS </h1>
+                <div id="episodios-img">
 
                 </div>
+                <button id="button-load-more">Cargar más</button>   
+            </div>
+            <div id="eventos-page">
 
             </div>
-
+            <div id="sobre-page">
+                <h1 class="title-sobre"> SOBRE NOSOTROS </h1>
+                <div class="info-sobre">
+                    <p>
+                        Nambi Retã es un proyecto sociocultural, en formato podcast, que busca brindar una educación alternativa e innovadora sobre temas artísticos y culturales, utilizando canales digitales. Creado por y para jóvenes, queremos reforzar la identidad paraguaya a fin de que se interesen en construir un Paraguay mejor.
+                    </p>
+                </div>
+            </div>
+            <div id="contacto-page">
+                <h1 class="title-contact"> CONTÁCTANOS </h1>
+                <div class="info-contact">
+                    <a class="contacto">correo:nambireta@gmail.com</a>
+                    <a class="contacto" href="https://www.facebook.com/nambireta/"> Facebook </a>
+                    <a class="contacto" href="https://www.instagram.com/nambireta/?hl=es"> Instagram </a>
+                </div>
+            </div>
         </div>
     </main>
-
 </body>
 </html>
