@@ -1,23 +1,33 @@
-let arrayIMG = ["multimedia/NAMBI RETA PNG (1) (1).png","multimedia/53 podcast.png"];
-const CONTENEDORIMG = document.getElementById("episodios-img");
-const BOTON = document.getElementById("button-load-more");
-console.log(BOTON);
+// JavaScript code for "Cargar más" and "Mostrar menos" functionality
 
-arrayIMG.forEach(src => {
-    const IMAGEN = document.createElement("img");
-    IMAGEN.src = src
-    IMAGEN.classList.add("img-episodio")
-    CONTENEDORIMG.appendChild(IMAGEN);
-});
+// JavaScript code for "Cargar más" and "Mostrar menos" functionality
 
-BOTON.addEventListener("click", cargarMas);
+const allImages = document.querySelectorAll('.img-container');
+const buttonLoadMore = document.getElementById('button-load-more');
+let currentIndex = allImages.length - 1;
+let isShowingAll = false;
 
-function cargarMas (){
-    let arrayIMG = ["multimedia/NAMBI RETA PNG (1) (1).png","multimedia/53 podcast.png"];
-    arrayIMG.forEach(src => {
-        const IMAGEN = document.createElement("img");
-        IMAGEN.src = src
-        IMAGEN.classList.add("img-episodio")
-        CONTENEDORIMG.appendChild(IMAGEN);
+const showImages = () => {
+  if (!isShowingAll) {
+    allImages[currentIndex].style.display = 'block';
+    currentIndex--;
+    if (currentIndex < 0) {
+      buttonLoadMore.textContent = 'Mostrar menos';
+      isShowingAll = true;
+      currentIndex = 0;
+    }
+  } else {
+    allImages.forEach((img) => {
+      img.style.display = 'none';
     });
-}
+    buttonLoadMore.textContent = 'Cargar más';
+    isShowingAll = false;
+    currentIndex = allImages.length - 1;
+    allImages[currentIndex].style.display = 'block'; // Show the first image when resetting
+  }
+};
+
+buttonLoadMore.addEventListener('click', showImages);
+
+// Initial display: Show only the last image
+showImages();
