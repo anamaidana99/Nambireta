@@ -134,12 +134,13 @@
 }
 
 /* CONTENIDO DE EPISODIOS */
-#episodios-page{
+#episodios-page {
     text-align: center;
     margin: auto;
     display: flex;
     flex-direction: column; /* Stack images vertically */
-} 
+  }
+  
   .title-episodios {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
@@ -148,23 +149,31 @@
     width: 400px;
     border-radius: 5px;
     text-align: center;
-    margin: 11px auto;  }
+    margin: 11px auto;
+  }
   
   #episodios-img {
     /* Add your styles for the container of the images */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* width: 80%; */
+    height: 38vh;
   }
   
   .img-container {
-    display: none;
+    /* Add your styles for the image container */
     text-align: center;
-    margin-bottom: 10px; /* Add some spacing between images */
+    margin: 10px;
   }
   
   .img-container img {
     width: 200px;
     height: 200px;
-    border-radius: 5px;   
+    border-radius: 5px;
+    /* Add any other styles for the images */
   }
+  
   
   #button-load-more {
     /* Add your styles for the "Cargar más"/"Mostrar menos" button */
